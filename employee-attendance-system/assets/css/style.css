@@ -1,0 +1,134 @@
+/* Frontend Styles */
+.eas-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+
+.eas-message {
+    padding: 12px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+}
+
+.eas-message.success {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+}
+
+.eas-message.warning {
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+    color: #856404;
+}
+
+.eas-message.error {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+}
+
+.eas-status {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 4px;
+}
+
+.eas-actions {
+    margin: 25px 0;
+    display: flex;
+    gap: 10px;
+}
+
+.eas-history {
+    margin-top: 30px;
+}
+
+.eas-history table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.eas-history th {
+    background: #f1f1f1;
+    padding: 10px;
+    text-align: left;
+}
+
+.eas-history td {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Edit Modal Styles */
+#eas-edit-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 9999;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.eas-modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.eas-form-group {
+    margin-bottom: 15px;
+}
+
+.eas-form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.eas-form-group input[type="datetime-local"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.eas-modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.status-completed {
+    color: #155724;
+    font-weight: 500;
+}
+
+.status-pending {
+    color: #856404;
+    font-weight: 500;
+}
+
+@media (max-width: 600px) {
+    .eas-actions {
+        flex-direction: column;
+    }
+    
+    .eas-history table {
+        font-size: 14px;
+    }
+}
